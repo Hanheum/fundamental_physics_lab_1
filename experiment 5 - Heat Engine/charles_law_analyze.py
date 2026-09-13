@@ -15,7 +15,7 @@ volume = height/10 * piston_area + 190 #in cm^3
 volume = volume.astype(np.float32)
 temperature = temperature.astype(np.float32)
 
-c = np.array([volume[0]/temperature[0], 0], dtype=np.float32)
+c = np.array([0.75, 0], dtype=np.float32)
 
 def relation(t):
     return c[0] * t + c[1]
