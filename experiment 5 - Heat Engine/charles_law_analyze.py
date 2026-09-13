@@ -9,8 +9,8 @@ height, temperature = df.to_numpy().T
 
 temperature -= absolute_zero #convert to Kelvin
 
-piston_area = (3.25/2)**2 * np.pi #in m^2
-volume = height/10 * piston_area #in m^3
+piston_area = (3.25/2)**2 * 3.14 #in cm^2
+volume = height/10 * piston_area + 190 #in cm^3
 
 volume = volume.astype(np.float32)
 temperature = temperature.astype(np.float32)
@@ -32,10 +32,10 @@ def get_gradient(t, v):
     dLdb = (2/N)*np.sum(v_pred - v)
     return np.array([dLda, dLdb])
 
-'''plt.plot(temperature, volume, 'ro')
+plt.plot(temperature, volume, 'ro')
 plt.xlabel('temperature (K)')
 plt.ylabel('volume (cm^3)')
-plt.show()'''
+plt.show()
 
 learning_rate = 1e-6
 i = 0
