@@ -2,12 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-absolute_zero = -273.15
-
 df = pd.read_csv('./charles_law_raw_data.csv')
 height, temperature = df.to_numpy().T
-
-temperature -= absolute_zero #convert to Kelvin
 
 piston_area = (3.25/2)**2 * 3.14 #in cm^2
 volume = height/10 * piston_area + 190 #in cm^3

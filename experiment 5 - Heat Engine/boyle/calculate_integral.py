@@ -8,8 +8,6 @@ mass, piston_heights, pressure, temperature = df.to_numpy().T
 area = (3.25/2)**2*np.pi
 volume = piston_heights/10 * area
 
-temperature += 273.15
-
 c = np.array([volume[0]*pressure[0], 0], dtype=np.float32)
 
 def relation(v):  #p = a/v + b

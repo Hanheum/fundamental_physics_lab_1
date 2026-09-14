@@ -6,10 +6,17 @@ df = pd.read_csv('./boyles_law_raw_data.csv')
 
 mass, piston_height, pressure, temperature = df.to_numpy().T
 
-absolute_zero = -273.15
-temperature -= absolute_zero
-
 volume = (3.25/2)**2*np.pi * piston_height/10 #in cm^3
+
+plt.plot(1/volume, pressure, 'ro')
+plt.xlabel('V^(-1) (cm^(-3))')
+plt.ylabel('P (kPa)')
+plt.show()
+
+plt.plot(volume, pressure, 'ro')
+plt.xlabel('V (cm)')
+plt.ylabel('P (kPa)')
+plt.show()
 
 plt.plot(1/volume, pressure, 'ro')
 plt.xlabel('V^(-1) (cm^(-3))')
