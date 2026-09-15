@@ -12,3 +12,12 @@ numerical integral: 419.38185983714226
 analytic integral: 419.3814400588724
 a theory: 3390.5
 percent error for a: 1.15% (6028 vs 5959)
+
+heat_engine:
+a->b: -712.18 mJ
+b->c: 4248.9 mJ
+c->d: 554.24 mJ
+d->a': -4513.4 mJ
+d->a: -3991.9 mJ
+total: -422.4 mJ
+total2: 99.1 mJ
