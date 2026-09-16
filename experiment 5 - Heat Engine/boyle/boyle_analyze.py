@@ -22,7 +22,11 @@ plt.plot(1/volume, pressure, 'ro')
 plt.xlabel('V^(-1) (cm^(-3))')
 plt.ylabel('P (kPa)')
 
-c = np.array([volume[0]*pressure[0], 0], dtype=np.float32)
+R = 8314
+T = 296.5
+a=2.1502060917555355e-05
+b=0.0011634975671768188
+c = np.array([R*T*b, R*T*a], dtype=np.float32)
 
 v_inverse = 1/volume
 
