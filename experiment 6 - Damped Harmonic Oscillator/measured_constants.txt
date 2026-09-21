@@ -1,0 +1,8 @@
+small_pulley_radius = 4.5 mm
+middle_pulley_radius = 14 mm
+big_pulley_radius = 23.5mm
+
+disk_radius = 4.8 cm = 48 mm
+disk_mass = 122.54 mg
+
+holding_mass = 10 g

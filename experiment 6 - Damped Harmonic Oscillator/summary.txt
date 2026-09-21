@@ -1,0 +1,9 @@
+simple_harmonic_oscillator:
+period = 1.5433333333333337
+angular_frequency = 4.0711783847815886
+
+spring_constant:
+angular_displacement=1.97
+torque=0.0046107
+kappa=0.0023404568527918782
+w0=4.071787849163065
