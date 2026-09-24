@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-starting_freq = 0.52
-ending_freq = 0.25
+starting_freq = 1
+ending_freq = 0.7
 
 duration = 146 #s
 
