@@ -31,6 +31,11 @@ equal_stack = 0
 learning_rate = 1e-6
 i = 0
 
+plt.plot(2*n-1, frequencies, 'ro')
+plt.xlabel('2n-1')
+plt.ylabel('frequency (Hz)')
+plt.show()
+
 while True:
     i += 1
     new_learning_rate = open('./learning_rate.txt', 'r').read()

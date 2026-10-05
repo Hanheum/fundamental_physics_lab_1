@@ -21,7 +21,7 @@ smaller = combined[0:len(combined)-1]
 
 diffs = np.abs(bigger - smaller)
 
-print(diffs)
+print(combined)
 input('hit enter to continue')
 
 fit_value = 25
