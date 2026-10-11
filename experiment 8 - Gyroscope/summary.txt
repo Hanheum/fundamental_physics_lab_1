@@ -1,0 +1,13 @@
+exp_1:
+with data
+y = [0.27, 0.42, 0.55, 0.72, 0.95]
+dt = [5.342, 6.412, 7.212, 8.062, 9.082]
+and substract 1.533 from every entry of dt to make initial time 0
+and substract 0.02 from every entry of y to make initial distance 0
+
+A=0.016002330322206666
+B=0.017346591994217727
+RMSE=0.0017780775178347522
+R^2=0.9999433574609897
+
+I = 0.013745491481966172
